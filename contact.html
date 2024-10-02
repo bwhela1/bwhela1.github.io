@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateEmails(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Get the values of the email fields
+            const email1 = document.getElementById('email').value;
+            const email2 = document.getElementById('confirm-email').value;
+
+            // Check if the emails match
+            if (email1 !== email2) {
+                alert('The email addresses do not match! Please try again.');
+            } else {
+                alert('The email addresses match. Thank you for submitting the form!');
+                // You can remove the next line if you want the form to be submitted
+                document.getElementById('contactForm').submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="capital-city.html">Columbia</a></li>
+                <li><a href="charleston.html">Charleston</a></li>
+                <li><a href="myrtle-beach.html">Myrtle Beach</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="contactForm" onsubmit="validateEmails(event)">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="confirm-email">Confirm Email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required><br>
+
+            <label for="question">Your Question:</label><br>
+            <textarea id="question" name="question" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 South Carolina Tourism | <a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

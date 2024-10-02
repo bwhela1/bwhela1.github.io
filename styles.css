@@ -1,0 +1,137 @@
+/* 1. Font-family declaration */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* 2. :hover pseudo-class to create a rollover effect for the navigation links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #4682b4; /* Rollover effect */
+    color: yellow; /* Change text color on hover */
+}
+
+/* Header and main section */
+header {
+    background-color: #4682b4;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+/* 3. Float property to position one element beside another */
+img.float-left {
+    float: left;
+    margin-right: 10px;
+    width: 150px; /* Adjust the image width */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 4. Absolute positioning */
+#special-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #ffeb3b;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 200px;
+}
+
+/* 5. Relative positioning */
+.relative-box {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    background-color: #add8e6;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+/* 6. Element selector */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 6. Class selector */
+.highlight {
+    background-color: #ffffcc;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+.button-style {
+    background-color: #4682b4;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 6. ID selector */
+#main-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+form {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 5px;
+    width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form on the page */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%; /* Make input and textarea take full width */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+form button {
+    display: block;
+    margin: 0 auto; /* Center the button */
+    padding: 8px 16px;
+}
