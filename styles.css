@@ -1,4 +1,4 @@
-/* 1. Font-family declaration */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
@@ -17,7 +17,6 @@ nav ul li {
     margin-right: 10px;
 }
 
-/* 2. :hover pseudo-class to create a rollover effect for the navigation links */
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -25,11 +24,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4682b4; /* Rollover effect */
-    color: yellow; /* Change text color on hover */
+    background-color: #4682b4;
+    color: yellow;
 }
 
-/* Header and main section */
+/* Header styles */
 header {
     background-color: #4682b4;
     padding: 10px 0;
@@ -37,15 +36,50 @@ header {
     color: white;
 }
 
-/* 3. Float property to position one element beside another */
-img.float-left {
-    float: left;
-    margin-right: 10px;
-    width: 150px; /* Adjust the image width */
+/* Main section and aside layout */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
-main {
-    padding: 20px;
+/* Main section styles */
+section {
+    flex: 2;
+}
+
+/* Sidebar (aside) styles */
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* Apply relative positioning to the facts */
+ol {
+    position: relative; /* Enables relative positioning */
+    left: 10px;          /* Moves the list slightly to the right */
+    top: 5px;            /* Moves the list slightly down */
+    padding: 10px;       /* Adds spacing inside the list */
+    background-color: #f0f0f0; /* Light background for better visibility */
+    border-radius: 8px;  /* Rounded corners */
+    width: 60%;          /* Optional: Adjusts width for better layout */
+    margin: 20px auto;   /* Centers the list horizontally */
+    }
+
+
+/* Float-left styling for images */
+img.float-left {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    border: 10px solid #ddd;
+    border-radius: 8px;
 }
 
 /* Footer styles */
@@ -59,57 +93,20 @@ footer {
     width: 100%;
 }
 
-/* 4. Absolute positioning */
+/* Absolute positioned special box */
 #special-box {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 20px;
     background-color: #ffeb3b;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #000;
-    width: 200px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Ensures it stays on top of other elements */
 }
 
-/* 5. Relative positioning */
-.relative-box {
-    position: relative;
-    left: 20px;
-    top: 10px;
-    background-color: #add8e6;
-    padding: 10px;
-    border: 1px solid #000;
-    width: 300px;
-    margin-bottom: 10px;
-}
-
-/* 6. Element selector */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* 6. Class selector */
-.highlight {
-    background-color: #ffffcc;
-    padding: 5px;
-    border: 1px solid #cccccc;
-}
-
-.button-style {
-    background-color: #4682b4;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* 6. ID selector */
-#main-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-}
 form {
     background-color: #e0f7fa;
     padding: 15px;
