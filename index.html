@@ -19,19 +19,46 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>About South Carolina</h2>
-        <p>South Carolina is known for its rich history, beautiful landscapes, and vibrant cities. Learn more about this amazing state!</p>
-        
-        <!-- Ordered List of 5 Facts About South Carolina -->
-        <h3>Top 5 Facts About South Carolina</h3>
-        <ol>
-            <li>South Carolina was the first state to secede from the Union in 1860.</li>
-            <li>The state is nicknamed "The Palmetto State" after the state tree.</li>
-            <li>South Carolina is famous for its beautiful beaches, including Myrtle Beach.</li>
-            <li>The capital city, Columbia, is the largest city in the state.</li>
-            <li>Charleston, SC, is known for its rich history and well-preserved architecture.</li>
-        </ol>
+        <div class="content-wrapper">
+            <section>
+                <h2>About South Carolina</h2>
+                <img src="images/State map.jpg" class="float-left" alt="South Carolina Map" />
+                <p>South Carolina is known for its rich history, beautiful landscapes, and vibrant cities.</p>
+                <p>Learn more about South Carolina's history at 
+                    <a href="https://www.history.com/topics/us-states/south-carolina" target="_blank" rel="noopener noreferrer">
+                        History Channel</a>.
+                </p>
+            </section>
+
+            <aside class="sidebar">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.sciway.net" target="_blank" rel="noopener noreferrer">SCIWAY - SC Info</a></li>
+                    <li><a href="https://www.southcarolinaparks.com" target="_blank" rel="noopener noreferrer">SC State Parks</a></li>
+                    <li><a href="https://www.scstatehouse.gov" target="_blank" rel="noopener noreferrer">SC State House</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Absolute positioned special box -->
+        <div id="special-box">
+            <p>Thank you for visting our website!</p>
+        </div>
+ 
+<!-- Ordered List of 5 Facts About South Carolina -->
+<div class="facts-section">
+    <h3>Top 5 Facts About South Carolina</h3>
+    <ol>
+        <li>South Carolina was the first state to secede from the Union in 1860.</li>
+        <li>The state is nicknamed "The Palmetto State" after the state tree.</li>
+        <li>South Carolina is famous for its beautiful beaches, including Myrtle Beach.</li>
+        <li>The capital city, Columbia, is the largest city in the state.</li>
+        <li>Charleston, SC, is known for its rich history and well-preserved architecture.</li>
+    </ol>
+</div>
+
         
         <!-- Statistical Data Table About South Carolina -->
         <h3>South Carolina Statistical Data</h3>
@@ -61,8 +88,11 @@
                 </tr>
             </tbody>
         </table><br><br>
-        <img src="images/State map.jpg" border=10 alt="South Carolina" /> 
+
+    <img src="images/State map.jpg" border=10 alt="South Carolina" />
+
     </main>
+
     <footer>
         <p>&copy; 2024 South Carolina Tourism | <a href="references.html">References</a></p>
     </footer>
