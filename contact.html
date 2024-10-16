@@ -39,6 +39,10 @@
         </nav>
     </header>
     <main>
+        <!-- Wrapper for content and sidebar -->
+        <div class="content-wrapper">
+            <!-- Main content section -->
+            <section>
         <form id="contactForm" onsubmit="validateEmails(event)">
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" required><br>
@@ -57,6 +61,20 @@
 
             <button type="submit">Submit</button>
         </form>
+        </section>
+
+<!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.sciway.net" target="_blank" rel="noopener noreferrer">SCIWAY - SC Info</a></li>
+                    <li><a href="https://www.southcarolinaparks.com" target="_blank" rel="noopener noreferrer">SC State Parks</a></li>
+                    <li><a href="https://www.scstatehouse.gov" target="_blank" rel="noopener noreferrer">SC State House</a></li><br><br>
+                    <img src="images/SCstatehouse.png" border=10 alt="SCstatehouse" />
+                </ul>
+            </aside>
+        </div>
+      
     </main>
     <footer>
         <p>&copy; 2024 South Carolina Tourism | <a href="references.html">References</a></p>
